@@ -1,0 +1,29 @@
+{
+  "__defaults__": {
+    "input_access_code":false,
+    "access_code_user":"freeaccess"
+  },
+  "bwaltus":{
+    "property_name":"Best Western Bridgeview Motor Inn",
+    "city":"Superior",
+    "state":"Wisconsin",
+    "logo_large_src":"41-logo.gif",
+    "logo_small_src":"41-logo-small.gif"
+  },
+  "edgewater":{
+    "property_name":"Edgewater Resort & Waterpark",
+    "city":"Duluth",
+    "state":"Minnesota",
+    "logo_large_src":"33-logo.png",
+    "logo_small_src":"33-logo-small.png"
+  },
+  "daysinnscottsdale":{
+    "property_name":"Days Inn & Suites Scottsdale",
+    "city":"Scottsdale",
+    "state":"Arizona",
+    "logo_large_src":"47-logo.png",
+    "logo_small_src":"47-logo-small.png",
+    "input_access_code":true,
+    "access_code_user":"authuser"
+  }
+}

@@ -1,0 +1,20 @@
+[30-Oct-2013 13:47:41 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Required variables are missing!' in /home/loginzmc/public_html/index.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/loginzmc/public_html/index.php on line 37
+[30-Oct-2013 13:47:41 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Required variables are missing!' in /home/loginzmc/public_html/index.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/loginzmc/public_html/index.php on line 37
+[31-Oct-2013 15:20:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/loginzmc/public_html/properties.class.php on line 31
+[31-Oct-2013 15:20:35 America/Chicago] PHP Fatal error:  Call to a member function checkIp() on a non-object in /home/loginzmc/public_html/index.php on line 28
+[31-Oct-2013 15:21:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/loginzmc/public_html/properties.class.php on line 31
+[31-Oct-2013 15:21:41 America/Chicago] PHP Fatal error:  Call to a member function checkIp() on a non-object in /home/loginzmc/public_html/index.php on line 28
+[31-Oct-2013 15:22:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/loginzmc/public_html/properties.class.php on line 31
+[31-Oct-2013 15:22:28 America/Chicago] PHP Fatal error:  Call to a member function checkIp() on a non-object in /home/loginzmc/public_html/index.php on line 28
+[31-Oct-2013 15:33:22 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/loginzmc/public_html/properties.class.php on line 31
+[31-Oct-2013 15:33:22 America/Chicago] PHP Fatal error:  Call to a member function checkIp() on a non-object in /home/loginzmc/public_html/index.php on line 28
+[31-Oct-2013 15:33:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/loginzmc/public_html/properties.class.php on line 31
+[31-Oct-2013 15:33:51 America/Chicago] PHP Fatal error:  Call to a member function checkIp() on a non-object in /home/loginzmc/public_html/index.php on line 28
+[31-Oct-2013 15:35:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/loginzmc/public_html/properties.class.php on line 31
+[31-Oct-2013 15:35:54 America/Chicago] PHP Fatal error:  Call to a member function checkIp() on a non-object in /home/loginzmc/public_html/index.php on line 28

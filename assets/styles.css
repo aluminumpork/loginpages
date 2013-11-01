@@ -1,0 +1,288 @@
+/* styles.css */
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  display: table;
+}
+
+html, body.overflow { /* .overflow for index page */
+  height: 100%;
+  width: 100%;
+}
+
+body.overflow {
+  overflow: hidden;
+}
+
+br.ifsmall {
+  display: none;
+}
+
+p {
+  margin: 0;
+  padding: 3px;
+}
+
+h2, h3, h4 {
+  margin: 3px 0 5px;
+}
+
+/** container sizing */
+section {
+  clear: both;
+}
+
+body section form {
+    text-align: center;
+}
+
+body section {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/** common header */
+header {
+  text-align: center;
+  position: relative;
+}
+
+/** index page */
+body.overflow {
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+body.index > div {
+  text-align: center;
+  position: relative;
+  color: #000;
+}
+
+h1.bg {
+  color: #fff;
+  text-shadow: 0px 0px 10px #E0E0E0;
+  margin: auto;
+  font-size: 14em;
+  height: 40%;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  text-align: center;
+  z-index: -1;
+}
+
+/** login page */
+body.login section {
+  max-width: 40%;
+  min-width: 240px;
+  margin: 0 auto;
+}
+body.login section form div {
+  margin: 10px 0;
+}
+
+body.login section form {
+  margin-top: 20px;
+}
+
+body.login section form label {
+  padding: 0 0 3px;
+  display: block;
+}
+
+body.login section form input[type="text"] {
+  border-radius: 4px;
+  font-size: 2em;
+  text-align: center;
+  width: 5em;
+  border: solid 1px #E5E5E5;
+  padding: 9px;
+  outline: 0;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+  /*background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));*/
+  background: -moz-linear-gradient(top, #fff, #eee 4%, #fff 60%);
+  background: linear-gradient(to bottom, #fff, #eee 4%, #fff 60%);
+}
+
+/** tos page */
+body.tos section > div {
+  word-wrap: break-word;
+  white-space: normal;
+  margin-top: 1em;
+}
+
+body.tos section > div ol, body.tos section > div ul {
+  margin: 0;
+  padding-left: 1.5em;
+  font-size: .9em;
+}
+
+body.tos section > div ol ol, body.tos section > div ul ul {
+  font-size: inherit;
+}
+
+body.tos form p {
+  font-size: 1.3em;
+}
+
+form[name="tos"] div {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/** error page */
+body.error section, body.login section {
+  border: 2px solid #9B9B9B;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 4px #D3D3D3;
+  padding: 5px;
+  margin: 40px auto 0;
+}
+
+body.error section p {
+  white-space: pre-line;
+  text-align: center;
+}
+
+body.error span.apology {
+  padding: 5px 0;
+  display: inline-block;
+}
+
+body.error span.phone {
+  color: #1585DB;
+}
+
+body.error span.error-text {
+  color: #CE1A1D;
+  background: transparent url('/assets/error.png') left center no-repeat;
+  display: inline-block;
+  height: 32px;
+  padding-left: 40px;
+  line-height: 32px;
+  margin: 4px;
+}
+
+
+form input[type="button"], form input[type="submit"] {
+  margin: 8px 0 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #f7f7f7;
+  padding: 10px 20px;
+  background: transparent repeat-x top left;
+
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  border: 1px solid #1f1f1d;
+  -moz-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 2px rgba(255,255,255,1);
+  -webkit-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 2px rgba(255,255,255,1);
+  box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 2px rgba(255,255,255,1);
+  text-shadow:
+    0px -1px 0px rgba(13,13,13,0.2),
+    0px 1px 0px rgba(196,196,196,0.4);
+}
+
+
+footer {
+  background: url('/assets/footer-separator.png') no-repeat top center;
+  padding-top: 20px;
+  margin: 40px 5px 5px;
+  display: block;
+  text-align: center;
+}
+
+footer span address {
+  display: inline;
+}
+
+form input[type="submit"] {
+  font-size: 1.6em;
+  background-image: url('/assets/button-bg-large.png');
+}
+
+
+
+/*@media (-webkit-min-device-pixel-ratio: 1.5),*/
+/*       (-o-min-device-pixel-ratio: 3/2),*/
+/*       (min--moz-device-pixel-ratio: 1.5),*/
+/*       (min-device-pixel-ratio: 1.5) {*/
+/**/
+/*  */
+/*}*/
+
+@media screen and (max-width: 780px){
+  h2 {
+    font-size: 1.8em;
+  }
+  
+  h3 {
+    font-size: 1.6em;
+  }
+  
+  h4 {
+    font-size: 1.4em;
+  }
+  
+  p {
+    /*font-size: 1.3em;*/
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  body section {
+    max-width: none;
+    margin: 10px auto !important;
+  }
+  
+  br.ifsmall {
+    display: inline;
+  }
+  
+  footer {
+    font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 350px){
+  body.index > div > img, header img {
+    width: 95%;
+    max-width: 330px;
+  }
+  
+  body.tos section > div {
+    height: auto;
+  }
+  
+  body.tos form input[type="submit"] {
+    font-size: 1.8em;
+    background-image: url('/assets/button-bg-large.png');
+  }
+  
+  footer {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-height: 480px){
+  body.index > div > img {
+    height: 40%;
+    width: auto;
+  }
+}
+
