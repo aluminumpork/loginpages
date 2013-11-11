@@ -43,3 +43,14 @@ function checkArr($keys, $arr){
   
   return $found;
 }
+
+function getRemoteIP(){
+  return $_SERVER['REMOTE_ADDR'];
+}
+
+function generateSessionID(){
+  $now = time();
+  $str = md5(json_encode($_GET)) . $now;
+
+  return $str;
+}
