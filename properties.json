@@ -1,7 +1,8 @@
 {
   "__defaults__": {
     "input_access_code":false,
-    "access_code_user":"freeaccess"
+    "access_code_user":"freeaccess",
+    "use_tos":true
   },
   "bwaltus":{
     "property_name":"Best Western Bridgeview Motor Inn",
@@ -17,13 +18,14 @@
     "logo_large_src":"33-logo.png",
     "logo_small_src":"33-logo-small.png"
   },
-  "daysinnscottsdale":{
+  "daysinnscotts":{
     "property_name":"Days Inn & Suites Scottsdale",
     "city":"Scottsdale",
     "state":"Arizona",
     "logo_large_src":"47-logo.png",
     "logo_small_src":"47-logo-small.png",
     "input_access_code":true,
-    "access_code_user":"authuser"
+    "access_code_user":"authuser",
+    "use_tos":false
   }
 }

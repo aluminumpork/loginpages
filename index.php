@@ -33,6 +33,7 @@ if(($p = checkArr($req, $_GET)) !== FALSE){
   raintpl::configure('tpl_dir', "templates/");
   raintpl::configure('tpl_ext', "tpl.inc");
   raintpl::configure('path_replace', false);
+  raintpl::configure('php_enabled', true);
 
   // look up property information in properties.json
   $properties = new Properties(file_get_contents('properties.json'));

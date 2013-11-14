@@ -54,3 +54,16 @@ function generateSessionID(){
 
   return $str;
 }
+
+function jsonToUrlParams($jsonStr){
+  $str = '';
+  $data = json_decode($jsonStr, true);
+
+  $pieces = array();
+  foreach($data as $key => $val){
+    $val = urlencode($val);
+    $pieces[] = "{$key}={$val}";
+  }
+
+  return implode('&', $pieces);
+}

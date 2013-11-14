@@ -5,7 +5,7 @@
   <script src="{$asset_path}/form-redirect.js"></script>
   <title>Terms of service</title>
 </head>
-<body class="tos">
+<body class="tos" style="display:none">
   <div>
     <header>
       <div><img src="{$asset_path}/{$logo_small_src}" alt="Logo for {$property_name}" /></div>
@@ -37,10 +37,20 @@
     var formParams = {$json_redirect_params};
     ;(function($){
       $(document).ready(function(){
+        var timerEnabled = false;
+        var timeout = 0;
+        {if condition="$use_tos == false"}
+          timerEnabled = true;
+          timeout = 1;
+        {else}
+          $('body').show();
+        {/if}
+
         formParams.page = 'login';
         $("form[name='tos']").formRedirect({
           params: formParams,
-          useTimer: false
+          useTimer: timerEnabled,
+          redirectTimer: timeout
         });
       });
     })(jQuery);
