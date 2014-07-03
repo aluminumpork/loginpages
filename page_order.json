@@ -1,0 +1,24 @@
+{
+  "pages":{
+    "index":{
+      "initial_page":true,
+      "order":0
+    },
+    "tos":{
+      "condition_key":"use_tos",
+      "condition_value":true,
+      "order":1
+    },
+    "login":{
+      "condition_key":"input_access_code",
+      "condition_value":true,
+      "order":2
+    },
+    "auto_login":{
+      "order":3
+    },
+    "error":{
+      "order":false
+    }
+  }
+}

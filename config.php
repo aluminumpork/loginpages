@@ -7,7 +7,7 @@
  */
  
 define('DS', DIRECTORY_SEPARATOR);
-define('BASE_URL', 'http://login.zmchotels.com');
+define('BASE_URL', 'http://login.staging.zmchotels.com');
 
 define('TEMPLATES_ROOT', dirname(__FILE__) . DS . 'templates' . DS);
 define('TEMPLATE_FILE_EXT', 'tpl.inc');

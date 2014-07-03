@@ -16,7 +16,7 @@
     <form name="tos" method="POST" action="{$link_login}">
       <label for="password">Please enter your access code</label>
       <input type="text" id="password" name="password" value="" />
-      <input type="hidden" name="username" value="authuser" />
+      <input type="hidden" name="username" value="{$access_code_user}" />
       <input type="hidden" name="dst" value="{$link_orig}" />
       <input type="hidden" name="domain" value="" />
       <div>

@@ -2,7 +2,8 @@
   var pluginName = 'formRedirect',
       defaults = {
         'useTimer': true,
-        'redirectTimer': 4000
+        'redirectTimer': 4000,
+        'direction': 'next'
       };
   
   function Plugin(element, options){
@@ -41,6 +42,9 @@
   
   Plugin.prototype.addFormInputs = function(){
     var $el, _this = this;
+    if(this.options['direction'] == 'next') this.options['params']['page'] = this.options['params']['next_page'];
+    if(this.options['direction'] == 'prev') this.options['params']['page'] = this.options['params']['prev_page'];
+
     $.each(this.options['params'], function(k, v){
       if(!$("input[name='" + k + "']", _this.$element).length){
         $el = $(document.createElement('input'));

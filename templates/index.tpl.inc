@@ -17,9 +17,7 @@
     <h2>Welcome to the <wbr />{$property_name}!</h2>
     <h3>Please wait while you are redirected...</h3>
     <progress>Loading</progress>
-    <form method="GET" name="redirect">
-      <input type="hidden" name="page" value="tos" />
-    </form>
+    <form method="GET" name="redirect"></form>
   </section>
 </div>
 
